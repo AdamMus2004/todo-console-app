@@ -11,6 +11,13 @@ public class Task {
         this.done = done;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setDone(boolean done) {
+        this.done = done;
+    }
 
     public String toString() {
         return id+". ["+ (done ? "X":" ")+"] "+description;

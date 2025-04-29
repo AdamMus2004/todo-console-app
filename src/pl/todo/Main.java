@@ -6,7 +6,7 @@ public class Main {
         manager.addTask("Nauczyć się Javy");
         manager.addTask("Zrobić TODO App");
         manager.addTask("Zjeść obiad");
-
+        manager.markTaskAsDone(2);
         manager.listTasks();
     }
 }

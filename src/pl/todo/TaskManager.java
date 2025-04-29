@@ -21,4 +21,14 @@ public class TaskManager {
             }
         }
     }
+    public void markTaskAsDone(int id){
+        for(Task task : tasks){
+            if (task.getId()==id){
+                task.setDone(true);
+                System.out.println("Zadanie od id: "+id+" zostało wykonane.");
+                return;
+            }
+        }
+        System.out.println("Nie znaleziono zadania o ID: " + id);
+    }
 }
